@@ -69,7 +69,7 @@ export default function Categories({ categories }) {
     })
     return (
         <div className='category-list-container'>
-            {categories.length
+            {_.size(categories) > 0
                 ? <Container>
                     <Row className='category-list-header'>
                         <Col sm={7}>Name</Col>
